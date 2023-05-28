@@ -15,13 +15,10 @@ type cases = [
   Expect<Equal<typeof curried3, () => true>>,
 ]
 
-
 // ============= Your Code Here =============
-type Curry<P, R> = P extends [infer H, ...infer T] ? (p: H) => Curry<T, R> : R;
+type Curry<P, R> = P extends [infer H, ...infer T] ? (p: H) => Curry<T, R> : R
 
 declare function Currying<F>(fn: F):
-  F extends (...P: infer A) => infer R
+F extends (...P: infer A) => infer R
   ? A extends [] ? () => R : Curry<A, R>
-  : never;
-
-
+  : never

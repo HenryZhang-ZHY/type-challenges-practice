@@ -20,9 +20,8 @@ type cases = [
   Expect<Equal<Includes<[undefined], null>, false>>,
 ]
 
-
 // ============= Your Code Here =============
 type Includes<T extends readonly any[], U> =
   T extends [infer First, ... infer Rest]
-  ? Equal<First, U> extends true ? true : Includes<Rest, U>
-  : false
+    ? Equal<First, U> extends true ? true : Includes<Rest, U>
+    : false

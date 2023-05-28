@@ -18,9 +18,8 @@ type cases = [
 // @ts-expect-error
 type error = MyAwaited<number>
 
-
 // ============= Your Code Here =============
 type MyAwaited<P extends { then: (onfulfilled: (arg: any) => any) => any }> =
   P extends { then: (onfulfilled: (arg: infer T) => any) => any }
-  ? T extends Promise<any> ? MyAwaited<T> : T
-  : never
+    ? T extends Promise<any> ? MyAwaited<T> : T
+    : never

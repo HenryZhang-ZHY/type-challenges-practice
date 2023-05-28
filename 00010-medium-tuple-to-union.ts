@@ -6,9 +6,8 @@ type cases = [
   Expect<Equal<TupleToUnion<[123]>, 123>>,
 ]
 
-
 // ============= Your Code Here =============
 type TupleToUnion<T extends readonly any[]> =
   T extends [infer First, ...infer Rest]
-  ? First | TupleToUnion<Rest> :
-  never
+    ? First | TupleToUnion<Rest> :
+    never

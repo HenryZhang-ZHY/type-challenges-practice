@@ -1,0 +1,31 @@
+{
+  "name": "type-challenges-practice",
+  "version": "1.0.0",
+  "description": "",
+  "author": "imentu",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "test": "tsc",
+    "lint": "eslint --quiet ."
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.39.3",
+    "eslint": "^8.41.0",
+    "typescript": "^5.0.4"
+  },
+  "eslintConfig": {
+    "extends": "@antfu/eslint-config-ts",
+    "rules": {
+      "import/first": "off",
+      "no-unused-vars": "off",
+      "@typescript-eslint/no-unused-vars": "off",
+      "@typescript-eslint/ban-ts-comment": "off",
+      "no-use-before-define": "off",
+      "no-unused-expressions": "off",
+      "prefer-const": "off",
+      "no-alert": "off",
+      "@typescript-eslint/consistent-type-definitions": "off"
+    }
+  }
+}

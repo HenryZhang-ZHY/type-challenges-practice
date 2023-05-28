@@ -56,10 +56,9 @@ type Expected1 = {
 
 type Expected2 = { readonly a: string } | { readonly b: number }
 
-
 // ============= Your Code Here =============
 type DeepReadonly<T> = {
   readonly [Property in keyof T]: T[Property] extends Function
-  ? T[Property]
-  : DeepReadonly<T[Property]>
+    ? T[Property]
+    : DeepReadonly<T[Property]>
 }

@@ -12,7 +12,6 @@ type cases = [
   Expect<Equal<Trim<' \n\t '>, ''>>,
 ]
 
-
 // ============= Your Code Here =============
 type Space = ' ' | '\n' | '\t'
 

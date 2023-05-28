@@ -19,9 +19,8 @@ type cases = [
   Expect<Equal<LookUp<Animal, 'cat'>, Cat>>,
 ]
 
-
 // ============= Your Code Here =============
 type LookUp<U, T extends string> =
   U extends { type: string }
-  ? U['type'] extends T ? U : never
-  : never
+    ? U['type'] extends T ? U : never
+    : never

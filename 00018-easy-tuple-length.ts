@@ -13,6 +13,5 @@ type cases = [
   Length<'hello world'>,
 ]
 
-
 // ============= Your Code Here =============
 type Length<T extends readonly any[]> = T['length']

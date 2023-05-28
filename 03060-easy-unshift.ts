@@ -7,6 +7,5 @@ type cases = [
   Expect<Equal<Unshift<['1', 2, '3'], boolean>, [boolean, '1', 2, '3']>>,
 ]
 
-
 // ============= Your Code Here =============
 type Unshift<T extends readonly any[], U> = [U, ...T]

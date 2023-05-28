@@ -23,7 +23,6 @@ interface Expected2 {
   completed: boolean
 }
 
-
 // ============= Your Code Here =============
 type MyPick<T, K extends keyof T> = {
   [key in K]: T[key]

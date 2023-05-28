@@ -8,6 +8,5 @@ type cases = [
   Expect<Equal<Concat<['1', 2, '3'], [false, boolean, '4']>, ['1', 2, '3', false, boolean, '4']>>,
 ]
 
-
 // ============= Your Code Here =============
 type Concat<T extends readonly any[], U extends readonly any[]> = [...T, ...U]

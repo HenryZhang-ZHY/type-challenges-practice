@@ -24,9 +24,7 @@ interface Expected2 {
   title: string
 }
 
-
 // ============= Your Code Here =============
 type MyOmit<T, K extends keyof T> = {
   [Property in Exclude<keyof T, K>]: T[Property]
 }
-

@@ -9,6 +9,5 @@ type cases = [
 // @ts-expect-error
 type error = If<null, 'a', 'b'>
 
-
 // ============= Your Code Here =============
 type If<C extends boolean, T, F> = C extends true ? T : F

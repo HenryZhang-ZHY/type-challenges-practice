@@ -6,6 +6,5 @@ type cases = [
   Expect<Equal<HelloWorld, string>>,
 ]
 
-
 // ============= Your Code Here =============
 type HelloWorld = string // expected to be a string

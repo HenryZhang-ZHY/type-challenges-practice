@@ -15,6 +15,5 @@ type errors = [
   First<{ 0: 'arrayLike' }>,
 ]
 
-
 // ============= Your Code Here =============
 type First<T extends any[]> = T extends [] ? never : T[0]

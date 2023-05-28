@@ -7,6 +7,5 @@ type cases = [
   Expect<Equal<MyExclude<string | number | (() => void), Function>, string | number>>,
 ]
 
-
 // ============= Your Code Here =============
 type MyExclude<T, U> = T extends U ? never : T

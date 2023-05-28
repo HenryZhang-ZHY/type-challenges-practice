@@ -7,6 +7,5 @@ type cases = [
   Expect<Equal<Pop<[]>, []>>,
 ]
 
-
 // ============= Your Code Here =============
 type Pop<T extends readonly any[]> = T extends [...infer Head, infer _] ? Head : []

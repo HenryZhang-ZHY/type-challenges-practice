@@ -7,6 +7,5 @@ type cases = [
   Expect<Equal<Last<[() => 123, { a: string }]>, { a: string }>>,
 ]
 
-
 // ============= Your Code Here =============
 type Last<T extends readonly any[]> = T extends [... infer _, infer Last] ? Last : never
